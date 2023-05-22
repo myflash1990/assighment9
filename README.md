@@ -6,10 +6,10 @@ This project is created using JavaScript with node.js to generate README by answ
 
 ## Usage
 
-##pre-requisite
+## pre-requisite
 Install below before running app
 
-#npm install readme-generator
+# npm install readme-generator
 
 1. Navigate to the **develop** folder.
 
