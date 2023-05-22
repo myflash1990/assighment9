@@ -8,7 +8,6 @@ This project is created using JavaScript with node.js to generate README by answ
 
 ## pre-requisite
 
-Install below before running app
 npm install readme-generator
 
 
