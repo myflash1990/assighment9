@@ -11,7 +11,6 @@ This project is created using JavaScript with node.js to generate README by answ
 npm install readme-generator
 
 
-
 1. Navigate to the **develop** folder.
 
 ```
