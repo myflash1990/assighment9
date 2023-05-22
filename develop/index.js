@@ -7,37 +7,37 @@ const questions = [
   {
     type: "input",
     name: "title",
-    message: "What is your project's title?"
+    message: "Enter the title of your project"
   },
   {
     type: "input",
-    name: "description",
-    message: "Please provide a description of your project."
+    name: "desc",
+    message: "Enter description of your project."
   },
   {
     type: "input",
     name: "usage",
-    message: "Please provide usage information for your project."
+    message: "Enter information of your project."
   },
   {
     type: "input",
     name: "installation",
-    message: "Please provide installation instructions for your project."
+    message: "What are installation instructions for your project."
   },
   {
     type: "input",
     name: "contribution",
-    message: "Please provide contribution guidelines for your project."
+    message: "What are the contribution guidelines for your project."
   },
   {
     type: "input",
     name: "test",
-    message: "Please provide test instructions for your project."
+    message: "Enter  tests for your project."
   },
   {
     type: "list",
     name: "license",
-    message: "Please select a license for your project.",
+    message: " What license used for your project.",
     choices: ["MIT", "Apache", "GPL", "BSD", "None"]
   },
   {
