@@ -39,29 +39,29 @@ function LS(license) {
 }
 
 function Markdown(data) {
-  let readme = `# ${data.title}\n\n`;
-  readme += `${SelectLicense(data.license)}\n\n`;
-  readme += `## Description\n\n${data.desc}\n\n`;
-  readme += `## Table of Contents\n\n`;
-  readme += `* [Installation](#installation)\n`;
-  readme += `* [Usage](#usage)\n`;
-  readme += data.license !== "None" ? `* [License](#license)\n` : "";
-  readme += `* [Contributing](#contributing)\n`;
-  readme += `* [Tests](#tests)\n`;
-  readme += `* [Questions](#questions)\n\n`;
-  readme += `## Installation\n\n${data.installation}\n\n`;
-  readme += `## Usage\n\n`;
-  readme += "```bash\n";
-  readme += `${data.usage}\n`;
-  readme += "```\n";
-  readme += LS(data.license);
-  readme += `## Contributing\n\n${data.contribution}\n\n`;
-  readme += `## Tests\n\n${data.test}\n\n`;
-  readme += `## Questions\n\n`;
-  readme += `My GitHub: [${data.github}](https://github.com/${data.github})\n\n`;
-  readme += `You can get in touch with me at [${data.email}](mailto:${data.email})\n\n`;
+  let rdme = `# ${data.title}\n\n`;
+  rdme += `${SelectLicense(data.license)}\n\n`;
+  rdme += `## Description\n\n${data.desc}\n\n`;
+  rdme += `## Table of Contents\n\n`;
+  rdme += `* [Installation](#installation)\n`;
+  rdme += `* [Usage](#usage)\n`;
+  rdme += data.license !== "None" ? `* [License](#license)\n` : "";
+  rdme += `* [Contributing](#contributing)\n`;
+  rdme += `* [Tests](#tests)\n`;
+  rdme += `* [Questions](#questions)\n\n`;
+  rdme += `## Installation\n\n${data.installation}\n\n`;
+  rdme += `## Usage\n\n`;
+  rdme += "```bash\n";
+  rdme += `${data.usage}\n`;
+  rdme += "```\n";
+  rdme += LS(data.license);
+  rdme += `## Contributing\n\n${data.contribution}\n\n`;
+  rdme += `## Tests\n\n${data.test}\n\n`;
+  rdme += `## Questions\n\n`;
+  rdme += `My GitHub: [${data.github}](https://github.com/${data.github})\n\n`;
+  rdme += `You can get in touch with me at [${data.email}](mailto:${data.email})\n\n`;
 
-  fs.writeFile("README.md", readme, err =>
+  fs.writeFile("README.md", rdme, err =>
     err ? console.log(err) : console.log("Success!")
   );
 }
