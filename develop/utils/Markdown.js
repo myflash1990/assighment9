@@ -28,8 +28,6 @@ function LicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
 function LS(license) {
   if (license !== "None") {
     return `## License\n\nThis application is covered under the [${license}](${LicenseLink(
