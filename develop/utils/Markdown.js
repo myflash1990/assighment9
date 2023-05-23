@@ -1,6 +1,5 @@
 const fs = require("fs");
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+
 function SelectLicense(license) {
   if ("MIT" === license) {
     return "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)";
@@ -15,8 +14,6 @@ function SelectLicense(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
 function LicenseLink(license) {
   if ("MIT" === license) {
     return "https://opensource.org/licenses/MIT";
@@ -43,11 +40,10 @@ function LS(license) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
 function Markdown(data) {
   let readme = `# ${data.title}\n\n`;
   readme += `${SelectLicense(data.license)}\n\n`;
-  readme += `## Description\n\n${data.description}\n\n`;
+  readme += `## Description\n\n${data.desc}\n\n`;
   readme += `## Table of Contents\n\n`;
   readme += `* [Installation](#installation)\n`;
   readme += `* [Usage](#usage)\n`;
